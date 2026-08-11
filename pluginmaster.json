@@ -1,20 +1,22 @@
-{
-  "Author": "goodmasta",
-  "Name": "Collection Viewer",
-  "Punchline": "View FFXIV Collect collections (mounts, minions, orchestrions, etc.) in-game.",
-  "Description": "Shows a character's collection (yours, or any player via right-click) using FFXIV Collect data: mounts, minions, orchestrions, emotes, hairstyles, bardings. Per-category progress, icons, search. UI available in English and Russian. Not affiliated with FFXIV Collect.",
-  "InternalName": "CollectionViewer",
-  "AssemblyVersion": "1.0.0.0",
-  "RepoUrl": "https://github.com/goodmasta/CollectionViewer",
-  "ApplicableVersion": "any",
-  "DalamudApiLevel": 15,
-  "Tags": [
-    "collection",
-    "mounts",
-    "minions",
-    "ffxivcollect"
-  ],
-  "LastUpdate": 1786475453,
-  "DownloadLinkInstall": "https://github.com/goodmasta/CollectionViewer/releases/download/latest/latest.zip",
-  "DownloadLinkUpdate": "https://github.com/goodmasta/CollectionViewer/releases/download/latest/latest.zip"
-}
+[
+  {
+    "Author": "goodmasta",
+    "Name": "Collection Viewer",
+    "Punchline": "View FFXIV Collect collections (mounts, minions, orchestrions, etc.) in-game.",
+    "Description": "Shows a character's collection (yours, or any player via right-click) using FFXIV Collect data: mounts, minions, orchestrions, emotes, hairstyles, bardings. Per-category progress, icons, search. UI available in English and Russian. Not affiliated with FFXIV Collect.",
+    "InternalName": "CollectionViewer",
+    "AssemblyVersion": "1.0.0.0",
+    "RepoUrl": "https://github.com/goodmasta/CollectionViewer",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "Tags": [
+      "collection",
+      "mounts",
+      "minions",
+      "ffxivcollect"
+    ],
+    "LastUpdate": 1786475453,
+    "DownloadLinkInstall": "https://github.com/goodmasta/CollectionViewer/releases/download/latest/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/goodmasta/CollectionViewer/releases/download/latest/latest.zip"
+  }
+]

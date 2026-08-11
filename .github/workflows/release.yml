@@ -47,7 +47,10 @@ jobs:
           $json = Get-Content pluginmaster.json -Raw | ConvertFrom-Json
           $json[0].AssemblyVersion = "${{ steps.version.outputs.version }}"
           $json[0].LastUpdate = [int][double]::Parse((Get-Date -UFormat %s))
-          ($json | ConvertTo-Json -Depth 10) | Set-Content pluginmaster.json
+          # -AsArray is required even for a single-entry array: piping a one-element
+          # PowerShell array through ConvertTo-Json without it unwraps to a bare {...}
+          # object instead of [{...}], which Dalamud's repo parser rejects.
+          ($json | ConvertTo-Json -Depth 10 -AsArray) | Set-Content pluginmaster.json
 
       - name: Commit updated pluginmaster.json
         shell: pwsh
