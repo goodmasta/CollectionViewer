@@ -7,6 +7,7 @@
     "InternalName": "CollectionViewer",
     "AssemblyVersion": "1.0.0.0",
     "RepoUrl": "https://github.com/goodmasta/CollectionViewer",
+    "IconUrl": "https://raw.githubusercontent.com/goodmasta/CollectionViewer/main/CollectionViewer/images/icon.png",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
     "Tags": [
