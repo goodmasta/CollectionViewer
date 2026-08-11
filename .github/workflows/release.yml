@@ -21,6 +21,15 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
+      - name: Install Dalamud (CI has no XIVLauncher install)
+        shell: pwsh
+        run: |
+          $dalamudDir = "$env:RUNNER_TEMP\dalamud"
+          New-Item -ItemType Directory -Force -Path $dalamudDir | Out-Null
+          Invoke-WebRequest -Uri "https://goatcorp.github.io/dalamud-distrib/latest.zip" -OutFile "$env:RUNNER_TEMP\dalamud.zip"
+          Expand-Archive -Path "$env:RUNNER_TEMP\dalamud.zip" -DestinationPath $dalamudDir -Force
+          "DALAMUD_HOME=$dalamudDir" >> $env:GITHUB_ENV
+
       - name: Build (Release)
         run: dotnet build CollectionViewer.sln -c Release
 
