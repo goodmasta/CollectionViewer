@@ -4,6 +4,19 @@ A Dalamud plugin (Dalamud v15) for Final Fantasy XIV that shows a character's
 [FFXIV Collect](https://ffxivcollect.com) collection — mounts, minions, orchestrions, emotes,
 hairstyles, and bardings — right inside the game.
 
+> ⚠️ **Requires internet access to FFXIV Collect.** This plugin has no offline mode — it fetches
+> everything live from the FFXIV Collect API. Your game/network needs outbound HTTPS access to:
+> - `ffxivcollect.com` — collection data (required for everything)
+> - `v2.xivapi.com` — item icons
+> - `na.finalfantasyxiv.com` / `eu.finalfantasyxiv.com` / `jp.finalfantasyxiv.com` — Lodestone
+>   search, only used for right-click lookups and "Detect automatically"
+>
+> **How to check:** open `https://ffxivcollect.com/api/characters/1` in a browser, or run
+> `curl https://ffxivcollect.com/api/characters/1`. You should get JSON back starting with
+> `{"id":1,"name":"Macaroni Gratin",...}`. A timeout, connection error, or blocked/redirected page
+> means a firewall, VPN, or network policy is blocking it — fix that first, since no plugin
+> setting can work around it.
+
 > **Built with AI.** This plugin's code, architecture, and documentation were generated with the
 > help of an AI coding assistant (Claude Code / Anthropic Claude), based on a set of requirements
 > and iterative feedback from the maintainer. Review it accordingly before trusting it in
