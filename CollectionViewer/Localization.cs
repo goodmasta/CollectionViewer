@@ -39,6 +39,8 @@ public sealed class LocStrings
     public required string LoadingCharacterData { get; init; }
     public required string NotVerified { get; init; }
     public required string CollectionHiddenPrivate { get; init; }
+    public required string CopyName { get; init; }
+    public required string RightClickToCopyHint { get; init; }
 
     public string MarketPrice(long price, string world) =>
         IsRussian
@@ -141,6 +143,8 @@ public static class Loc
         LoadingCharacterData = "Loading character data...",
         NotVerified = "(not verified on FFXIV Collect)",
         CollectionHiddenPrivate = "This collection is hidden by the profile's privacy settings.",
+        CopyName = "Copy name",
+        RightClickToCopyHint = "Right-click to copy the name",
 
         ConfigWindowTitle = "Collection Viewer - Settings",
         LanguageLabel = "Language",
@@ -205,6 +209,8 @@ public static class Loc
         LoadingCharacterData = "Загрузка данных персонажа...",
         NotVerified = "(не верифицирован на FFXIV Collect)",
         CollectionHiddenPrivate = "Эта коллекция скрыта настройками приватности профиля.",
+        CopyName = "Скопировать название",
+        RightClickToCopyHint = "ПКМ — скопировать название",
 
         ConfigWindowTitle = "Collection Viewer - Настройки",
         LanguageLabel = "Язык",

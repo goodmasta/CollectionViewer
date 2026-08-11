@@ -374,18 +374,33 @@ public sealed class CollectionWindow : Window, IDisposable
             nameHovered = ImGui.IsItemHovered();
         }
 
+        using (var popup = ImRaii.ContextPopupItem($"itemctx_{item.Id}"))
+        {
+            if (popup.Success)
+            {
+                if (ImGui.MenuItem(loc.CopyName))
+                    ImGui.SetClipboardText(item.Name);
+            }
+        }
+
         if (!owned && item.Market is { } market)
         {
             ImGui.SameLine();
             ImGui.TextColored(new Vector4(1f, 0.85f, 0.4f, 1f), loc.MarketPrice(market.Price, market.World));
         }
 
-        if (nameHovered && !string.IsNullOrEmpty(item.Description))
+        if (nameHovered)
         {
             ImGui.BeginTooltip();
-            ImGui.PushTextWrapPos(400 * ImGuiHelpers.GlobalScale);
-            ImGui.TextUnformatted(item.Description);
-            ImGui.PopTextWrapPos();
+            if (!string.IsNullOrEmpty(item.Description))
+            {
+                ImGui.PushTextWrapPos(400 * ImGuiHelpers.GlobalScale);
+                ImGui.TextUnformatted(item.Description);
+                ImGui.PopTextWrapPos();
+                ImGui.Spacing();
+            }
+
+            ImGui.TextDisabled(loc.RightClickToCopyHint);
             ImGui.EndTooltip();
         }
     }
