@@ -1,0 +1,13 @@
+{
+  "Author": "goodmasta",
+  "Name": "Collection Viewer",
+  "Punchline": "View FFXIV Collect collections (mounts, minions, orchestrions, etc.) in-game.",
+  "Description": "Shows a character's collection (yours, or any player via right-click) using FFXIV Collect data: mounts, minions, orchestrions, emotes, hairstyles, bardings. Per-category progress, icons, search. UI available in English and Russian. Not affiliated with FFXIV Collect.",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "collection",
+    "mounts",
+    "minions",
+    "ffxivcollect"
+  ]
+}
