@@ -4,7 +4,7 @@
     <Version>1.0.0.0</Version>
     <Description>Просмотр коллекции FFXIV Collect (маунты, минионы, оркестрионы, эмоции, причёски, бардинги) прямо в игре.</Description>
     <PackageProjectUrl>https://github.com/goodmasta/CollectionViewer</PackageProjectUrl>
-    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <IsPackable>false</IsPackable>
     <RootNamespace>CollectionViewer</RootNamespace>
   </PropertyGroup>
