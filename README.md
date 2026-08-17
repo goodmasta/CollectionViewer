@@ -4,6 +4,15 @@ A Dalamud plugin (Dalamud v15) for Final Fantasy XIV that shows a character's
 [FFXIV Collect](https://ffxivcollect.com) collection — mounts, minions, orchestrions, emotes,
 hairstyles, and bardings — right inside the game.
 
+## Quick install
+
+1. In-game: `/xlsettings` → Experimental → Custom Plugin Repositories → add:
+   `https://raw.githubusercontent.com/goodmasta/CollectionViewer/main/pluginmaster.json`
+2. `/xlplugins` → find **Collection Viewer** → Install.
+3. `/pcollection config` → enter your FFXIV Collect / Lodestone ID (or use "Detect automatically").
+
+Details, dev-plugin setup, and building from source: see [Installing](#installing) below.
+
 > ⚠️ **Requires internet access to FFXIV Collect.** This plugin has no offline mode — it fetches
 > everything live from the FFXIV Collect API. Your game/network needs outbound HTTPS access to:
 > - `ffxivcollect.com` — collection data (required for everything)

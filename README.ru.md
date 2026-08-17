@@ -4,6 +4,17 @@
 сайта [FFXIV Collect](https://ffxivcollect.com) — маунты, минионы, оркестрионы, эмоции, причёски
 и бардинги — прямо в игре.
 
+## Быстрая установка
+
+1. В игре: `/xlsettings` → Experimental → Custom Plugin Repositories → добавить:
+   `https://raw.githubusercontent.com/goodmasta/CollectionViewer/main/pluginmaster.json`
+2. `/xlplugins` → найти **Collection Viewer** → Install.
+3. `/pcollection config` → ввести свой FFXIV Collect / Lodestone ID (или воспользоваться
+   «Определить автоматически»).
+
+Подробности, установка как dev-плагина и сборка из исходников — в разделе
+[Установка](#установка) ниже.
+
 > ⚠️ **Обязателен доступ к API FFXIV Collect.** У плагина нет офлайн-режима — все данные он
 > получает напрямую с API FFXIV Collect в реальном времени. Игре/сети нужен исходящий HTTPS-доступ
 > к:
